@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RESOURCES>
   <RE>
-    <MAIN>WEB</MAIN>
-    <NOT>BBB2</NOT>
+    <!-- border menu -->
+    <WEB>WEB</WEB>
+    <JavaScript>JavaScript</JavaScript>
   </RE>
   <RE>
-    <MAIN>WEB2</MAIN>
-    <NOT>BBB2</NOT>
-  </RE>
-  <RE>
-    <MAIN>WEB3</MAIN>
-    <NOT>BBB2</NOT>
-  </RE>
-  <RE>
-    <MAIN>WEB4</MAIN>
-    <NOT>BBB2</NOT>
-  </RE>
+    <!-- contents -->
+    <Greeting>안녕하세요</Greeting>
 </RESOURCES>
