@@ -3,20 +3,52 @@
 <head>
   <title>WEB1 - html</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html"></a>CSS</li>
-    <li><a href="3.html"></a>JavaScript</li>
-  </ol>
-  <h2>JavaScript?</h2>
+  <h1 id="title"><a href="index.html">WEB</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h2>JavaScript?</h2>
+      <p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.</p>
+    </div>
+  </div>
 
-  <img src="coding.jpg" width = "50%"><br>
-  html is <strong><u>not</u> programing language.</strong>
-  <a href="https://www.dogdrip.net" title="개드립넷">hi</a>
-  <p>첫번째 단락</p>
-  <p style="margin-top:45px;">두번째 단락</p>
+  <input id ="nbtn" type="button" value="야간모드" onclick="
+    nightMode();
+  ">
+  <script type="text/javascript">
+    var onclicked = false;
+    var body_target = document.querySelector('body');
+    function nightMode() {
+      if(onclicked == false){
+        body_target.style.backgroundColor='rgb(40,44,52)';
+        body_target.style.color='white';
+        var x = document.querySelectorAll('a');
+        for (var i = 0; i<x.length; i++){
+          x[i].style.color='white';
+        }
+        nbtn.value='주간모드';
+        onclicked = true;
+      }
+      else if(onclicked==true){
+        body_target.style.backgroundColor='white';
+        body_target.style.color='black';
+        var x = document.querySelectorAll('a');
+        for (var i = 0; i<x.length; i++){
+          x[i].style.color='black';
+        }
+        nbtn.value='야간모드';
+        onclicked = false;
+      }
+
+    }
+  </script>
+
 </body>
 </html>
