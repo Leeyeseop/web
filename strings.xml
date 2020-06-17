@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<resources>
-  <re>
-  <!-- border names -->
-    <main_page>WEB</main_page>
-  </re>
-</resources>
+<RESOURCES>
+  <RE>
+    <MAIN>WEB</MAIN>
+    <NOT>BBB2</NOT>
+  </RE>
+  <RE>
+    <MAIN>WEB2</MAIN>
+    <NOT>BBB2</NOT>    
+  </RE>
+  <RE>
+    <MAIN>WEB3</MAIN>
+    <NOT>BBB2</NOT>
+  </RE>
+  <RE>
+    <MAIN>WEB4</MAIN>
+    <NOT>BBB2</NOT>
+  </RE>
+</RESOURCES>
